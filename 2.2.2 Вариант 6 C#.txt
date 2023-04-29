@@ -1,0 +1,35 @@
+using System;
+
+namespace УЛПР
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double xn, yn, xk, yk;
+            int x0=0, y0=0;
+            Console.WriteLine("Координаты начальной точки(x,y) ");
+            xn=Convert.ToDouble(Console.ReadLine());
+            yn=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Координаты конечной точки(x,y) ");
+            xk=Convert.ToDouble(Console.ReadLine());
+            yk=Convert.ToDouble(Console.ReadLine());
+            if ((xn > 0) && (yn > 0)) 
+                Console.WriteLine("Начальная точка находится в 1 четверти");
+            if ((xn < 0) && (yn > 0))
+                Console.WriteLine("Начальная точка находится в 2 четверти");
+            if ((xn < 0) && (yn < 0))
+                Console.WriteLine("Начальная точка находится в 3 четверти");
+            if ((xn > 0) && (yn < 0))
+                Console.WriteLine("Начальная точка находится в 4 четверти");
+            if ((xk > 0) && (yk > 0))
+                Console.WriteLine("Конечная точка находится в 1 четверти");
+            if ((xk < 0) && (yk > 0))
+                Console.WriteLine("Конечная точка находится в 2 четверти");
+            if ((xk < 0) && (yk < 0))
+                Console.WriteLine("Конечная точка находится в 3 четверти");
+            if ((xk > 0) && (yk < 0))
+                Console.WriteLine("Конечная точка находится в 4 четверти");
+	  }
+    }       
+}         

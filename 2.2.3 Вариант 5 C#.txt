@@ -1,0 +1,22 @@
+using System;
+
+namespace УЛПР
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {  
+       	 int[] myArray = { 3, 7, 1, 9, 2 };
+    	  	 int sum = 0;
+        	 int product = 1;
+        	 foreach (int element in myArray)
+       	 {
+             sum += element;
+             product *= element;
+        	}
+       	 Console.WriteLine("Сумма элементов массива: " + sum);
+        	 Console.WriteLine("Произведение элементов массива: " + product);
+		  
+	  }
+    }       
+}         

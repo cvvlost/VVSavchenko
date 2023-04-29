@@ -1,0 +1,20 @@
+using System;
+
+namespace УЛПР
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+            Console.WriteLine("Введите длины сторон ");
+            x=Convert.ToInt32(Console.ReadLine());
+            y=Convert.ToInt32(Console.ReadLine());
+            z=Convert.ToInt32(Console.ReadLine());
+            if (((z < x + y) && (x < y + z)) && (y < z + x))
+                Console.WriteLine("Существует");
+            else
+                Console.WriteLine("Не существует");
+	  }
+    }       
+}         

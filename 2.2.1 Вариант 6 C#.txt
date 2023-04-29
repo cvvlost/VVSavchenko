@@ -1,0 +1,20 @@
+using System;
+
+namespace УЛПР
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double x0=0, y0=0;
+            double x1, y1;
+            Console.WriteLine("Введите координаты точки");
+            Console.WriteLine("X= ");
+            x1 =Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Y= ");
+            y1 = Convert.ToDouble(Console.ReadLine());
+            double rad = Math.Atan2(y1 - y0, x1 - x0);
+            Console.WriteLine("Угол отрезка: {0:F2}°", rad * 180 / Math.PI); 
+	  }
+    }       
+}         

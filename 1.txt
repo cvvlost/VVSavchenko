@@ -1,0 +1,23 @@
+using System;
+
+namespace УЛПР
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, a2, b, b2, x, tg, result;
+            Console.WriteLine("Большее основание");
+            a=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Меньшее основание");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Угол при большем основании");
+            x = Convert.ToDouble(Console.ReadLine());
+            a2 = Math.Pow(a, 2.0);
+            b2 = Math.Pow(b, 2.0);
+            tg = Math.Tanh(x);
+            result = (a2 - b2) / 4 * tg;
+            Console.WriteLine(result);
+	  }
+    }       
+}         
